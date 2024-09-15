@@ -4,7 +4,7 @@ public class fibonacci {
 
 
 
-    public static int fibonacci(int number) {
+    /*public static int fibonacci(int number) {
 
 
         int a = 0;
@@ -26,6 +26,31 @@ public class fibonacci {
 
         }
         return a;
+    }*/
+
+
+
+    public static int fibonacci(int number){
+
+        int a=0;
+        int b=1;
+
+
+
+        for(int i=2;i<number;i++){
+
+            int temproryNumber=a+b;
+
+System.out.print(" ,"+temproryNumber);
+            a=b;
+            b=temproryNumber;
+
+
+
+
+        }
+        return a;
+
     }
 
         public static void main(String[] args){
